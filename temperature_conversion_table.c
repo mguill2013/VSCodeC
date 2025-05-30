@@ -1,3 +1,16 @@
+/*
+ * Program: temperature_conversion_table.c
+ * Author: Michael Guillory
+ * Date: 5/29/2025
+ * Course: EGN 3211: Engineering Analysis and Computation
+
+ * Description: The following program prints a Celsius-Fahrenheit
+     table for temperatures from 0 to 300 degrees Fahrenheit
+     in steps of 20 degrees. The formula used to convert
+     Fahrenheit to Celsius is:
+     Celsius = 5 * (Fahrenheit - 32) / 9
+*/
+
 #include <stdio.h>
 
 /* print Fahrenheit-Celsius table
@@ -22,9 +35,3 @@ int main()
     }
 return 0;    // Return 0 to indicate successful
 }
-
-/* 
-    The program prints a Fahrenheit-Celsius table for temperatures from 0 to 300 degrees Fahrenheit in steps of 20 degrees.
-    The formula used to convert Fahrenheit to Celsius is:
-    Celsius = 5 * (Fahrenheit - 32) / 9
-*/

@@ -9,15 +9,14 @@
 
 #include <stdio.h>
 
-/* copy input to output; 1st version */
+/* copy input to output; 2nd version */
 
 main()
 {
 	int c;                  // declare variable to hold character input
 	
-	c = getchar();          // read first character
-	while (c != EOF) {      // loop until EOF
-		putchar(c);         // write character to output
-		c = getchar();      // read next character
-	}
+	while ((c = getchar()) != EOF)      // read, assign, and check all in one line
+        putchar(c);                     // If condition is true, print the character
+
+return 0;
 }

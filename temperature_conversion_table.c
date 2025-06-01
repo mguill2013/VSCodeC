@@ -17,21 +17,10 @@
     for fahr = 0, 20, ..., 300; floating-point version */
 int main()
 {
-    float fahr, celsius;
-    float lower, upper, step;
-
-    lower = 0;    // lower limit of temperature table
-    upper = 300;  // upper limit
-    step = 20;   // step size
-
-    printf("Fahrenheit\tCelsius\n");    // Print the heading
-    printf("---------\t-------\n");    // Print the separator
-
-    fahr = lower;    // Initialize fahr variable to the lower limit
-    while (fahr <= upper) {
-        celsius = (5.0/9.0) * (fahr - 32.0);
-        printf("%3.0f\t%6.1f\n", fahr, celsius);
-        fahr = fahr + step;
-    }
-return 0;    // Return 0 to indicate successful
+	int fahr;
+	
+	for (fahr = 0; fahr <= 300; fahr = fahr + 20)
+		printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+		
+return 0;
 }

@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <limits.h>
 
-int main()
+main()
 {
-	short int var1 = SHRT_MIN;
-	short int var2 = SHRT_MAX;
+	int fahr;
 	
-	printf("The size of my computer's int is: %d", sizeof(int));
-	printf("\nrange of short signed integer is from: %d to %d", var1, var2);
-	return 0;
-	
+	for (fahr = 0; fahr <= 300; fahr = fahr + 20)
+		printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+
+return 0;
 }

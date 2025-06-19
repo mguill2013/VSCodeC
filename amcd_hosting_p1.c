@@ -44,7 +44,7 @@ int main()
     printf("Welcome to AMCD Hosting Inc.\n");
 
     // Prompt for Web Hosting Service
-    printf("Would you like to subscribe to a Web Hosting Service?\n");
+    printf("Would you like to subscribe to a Web Hosting Service?");
     printf("(Y/N): ");
     scanf(" %c", &web_hosting_choice);
     web_hosting_choice = toupper(web_hosting_choice);       // Convert to uppercase for consistency
@@ -111,7 +111,7 @@ int main()
             // In line 95, the IP Cost is already included in web_hosting_cost, so subtract it back for the correct display output
                 // Furthermore, the IP Type is displayed based on the user's choice (1 for Shared, 2 for Dedicated)
         const char* ip_type_name = (ip_type_choice == 1) ? "Shared" : "Dedicated";        // Determine IP Type name based on choice
-        printf("%-20s %10d $ %8.2f\n", (ip_type_choice == 1) ? "IP Shared" : "IP Dedicated", ip_type_choice, ip_cost);
+        printf("%-20s %10d $ %8.2f\n", (ip_type_choice == 1) ? "    IP Shared" : "    IP Dedicated", ip_type_choice, ip_cost);
 
         total_bill = web_hosting_cost;      // Total Bill for Part 1 of this program
     } else {

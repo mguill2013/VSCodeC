@@ -33,6 +33,7 @@ int main() {
     printf("\n----------------------------------------");
     // End Menu Printing
 
+    // Order Processing 
     while(c == 0) {
         printf("\n\nWhat would you like to order? ");
         scanf("%d", &o);
@@ -72,6 +73,8 @@ int main() {
             continue;
         }
     }
+
+    // End Order Processing and Total Calculation
     printf("\n%-15s$%-12.2f", "Subtotal: ", total);
     printf("\n%-15s$%-12.2f", "Tax: ", total * 0.06);
     printf("\n%-15s$%-12.2f", "Total: ", total + (total * 0.06));

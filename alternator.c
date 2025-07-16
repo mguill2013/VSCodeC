@@ -1,7 +1,7 @@
 /*
  * Program: alternator.c
  * Author: Michael Guillory
- * Date: 5/21/2025
+ * Date: 7/16/2025
  * Course: EGN 3211: Engineering Analysis and Computation
 
  * Description: This program implements a simple alternator function that toggles its state

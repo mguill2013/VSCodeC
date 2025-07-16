@@ -10,16 +10,17 @@
 */
 
 #include <stdio.h>
+int alternator();                                               // Function prototype for alternator
 
 int main() {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {                               // Loop to call alternator function 5 times
         printf("Alternator state: %d\n", alternator());
     }
     return 0;
 }
 
 int alternator() {
-    static int state = 0;
-    state = 1 - state;
+    static int state = 0;                                       // Static variable to hold the state of the alternator
+    state = 1 - state;                                         // Toggle state between 0 and 1
     return state;
 }

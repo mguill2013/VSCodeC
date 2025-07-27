@@ -2,9 +2,15 @@
  * Program: electionSystem.c
  * Author: Michael Guillory
  * Date: 07/27/2025
- * Course: EGN 3211: Engineering Analysis and Computation
+ * Course: EGN 3211: Engineering Analysis and Computation (EGN3211-25Summer CR02)
 
- * Description: 
+ * Description: This program simulates a simple election system where users can cast votes for candidates.
+ * It allows users to view vote counts and determine the leading candidate(s).
+ * Three main functionalities are provided:
+ * 1. Cast a vote for a candidate.
+ * 2. View the current vote counts.
+ * 3. Determine the leading candidate(s).
+ * The program also handles invalid votes, and allows for a "None of These" option.
 */
 
 #include <stdio.h>
@@ -33,7 +39,7 @@ int main() {
     int choice;
 
     do {
-        printf("\n##### Welcome to Election/Voting 2025 ####\n");
+        printf("\n##### Welcome to Election/Voting 2025 #####\n");
         printf("1. Cast the Vote\n");
         printf("2. Find Vote Count\n");
         printf("3. Find Leading Candidate\n");

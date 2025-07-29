@@ -1,5 +1,5 @@
 /*
- * Program: copyfile2.chf
+ * Program: copyfile2.c
  * Author: Michael Guillory
  * Date: 7/29/2025
  * Course: EGN 3211: Engineering Analysis and Computation

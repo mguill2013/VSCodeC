@@ -4,7 +4,12 @@
  * Date: 7/31/2023
  * Course: EGN 3211: Engineering Analysis and Computation
 
- * Description: 
+ * Description: This is a simple program that demonstrates how to find a root of a function
+ * using a numerical search method. It prints the values of the function at specified intervals
+ * and identifies where a sign change occurs, indicating the presence of a root.
+ * The function used in this example is f(x) = x^2 - 4,
+ * which has roots at x = -2 and x = 2.
+ * The program can be modified to search for roots of other functions by changing the definition of f(x).
 */
 
 #include <stdio.h>
